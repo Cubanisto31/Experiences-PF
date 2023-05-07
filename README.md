@@ -4,7 +4,7 @@ Ce dépôt a pour objectif de répertorier les projets de PF afin de permettre d
 
 Description des fichiers :
 
-**.gitignore** -> Permet de ne pas commit les fichiers aux formats indiqués qui se trouveraient dans le dépôt local. 
+**0° .gitignore** -> Permet de ne pas commit les fichiers aux formats indiqués qui se trouveraient dans le dépôt local. 
 
 **1° README.md** -> Permet d'indiquer l'utilité de ce dépôt ainsi que les fichiers que l'on y retrouve.
 
