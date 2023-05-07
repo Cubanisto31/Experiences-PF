@@ -5,37 +5,28 @@ Created on Sat May  6 13:41:37 2023
 @author: paulf
 """
 
-import requests
-import zipfile
-import io
 
-# URL de la page contenant les liens vers les fichiers à télécharger
-url = 'https://www.data.gouv.fr/fr/datasets/5b7ffc618b4c4169d30727e0/#/resources'
+import pandas as pd 
+import json 
 
-# Télécharger la page HTML
-response = requests.get(url)
+# Charger les données JSON à partir d'une chaîne ou d'un fichier
+with open('donnees.json', 'r') as f:
+    donnees_json = json.load(f)
 
-# Extraire les liens vers les fichiers ZIP et PDF
-links = []
-for line in response.content.decode().split('\n'):
-    if 'href=' in line and ('Télécharger la ressource' in line):
-        link = line.split('href="')[1].split('"')[0]
-        links.append(link)
+# Extraire les informations nécessaires et les stocker dans une liste de dictionnaires
+unites_legales = donnees_json['unitesLegales']
+liste_informations = []
+for unite_legale in unites_legales:
+    siren = unite_legale['siren']
+    date_creation = unite_legale['dateCreationUniteLegale']
+    categorie = unite_legale['categorieEntreprise']
+    denomination = unite_legale['periodesUniteLegale'][0]['denominationUniteLegale']
+    activite_principale = unite_legale['periodesUniteLegale'][0]['activitePrincipaleUniteLegale']
+    informations = {'SIREN': siren, 'Date de création': date_creation, 'Catégorie': categorie, 'Dénomination': denomination, 'Activité principale': activite_principale}
+    liste_informations.append(informations)
 
-# Télécharger les fichiers ZIP et extraire les fichiers CSV
-for link in links:
-    if 'Télécharger la ressource' in link:
-        response = requests.get(link)
-        with zipfile.ZipFile(io.BytesIO(response.content)) as zip_file:
-            for csv_file in zip_file.namelist():
-                if csv_file.endswith('.csv'):
-                    with zip_file.open(csv_file) as file:
-                        # Lire le contenu du fichier CSV
-                        csv_content = file.read().decode()
-                        # Faire quelque chose avec les données CSV ici...
+# Créer un DataFrame à partir de la liste de dictionnaires
+df = pd.DataFrame(liste_informations)
 
-    elif 'explication' in link:
-        # Télécharger les documents explicatifs PDF
-        response = requests.get(link)
-        with open(link.split('/')[-1], 'wb') as f:
-            f.write(response.content)
+# Exporter le DataFrame au format CSV
+df.to_csv('donnees.csv', index=False)
