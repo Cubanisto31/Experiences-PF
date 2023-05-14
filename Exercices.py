@@ -26,50 +26,56 @@ Created on Sun May  7 23:32:11 2023
 
 # print(madlib)
 
- #Exercice 3
- #Faire un programme qui choisit un nombre que je dois parvenir à deviner
-# import random
+ # Exercice 3
+ # Faire un programme qui choisit un nombre que je dois parvenir à deviner
+import random
 
-# def devine(x):
-#     aléatoire=random.randint(1,x)
-#     devine=0
-#     while devine != aléatoire :
-#         devine=int(input(f'Devine un nombre entre 1 et {x}:'))
-#         if devine < aléatoire:
-#             print('Plus')
-#         elif devine > aléatoire:
-#             print('Moins')
-#     print(f'Tu es chaud, tu as deviné le nombre {aléatoire}!')
+def devine(x):
+    aléatoire=random.randint(1,x)
+    devine=0
+    count=0
+    while devine != aléatoire :
+        devine=int(input(f'Devine un nombre entre 1 et {x}:'))
+        count += 1
+        if devine < aléatoire:
+            print('Plus')
+        elif devine > aléatoire:
+            print('Moins')
+    print(f'Tu es chaud, tu as deviné le nombre {aléatoire} en {count} coups!')
         
-# devine(100)
+devine(100)
 
 #J'aimerais rajouter un système de comptage de point en fonction du nombre de 
 #tour dont il a fallu pour trouver le chiffre mystère.
 
  #Exercice 4
  #L'ordinateur va essayer de deviner un chiffre que j'ai dans ma tête
-import random
+# import random
  
-def ordinateur_guess(x):
-    low = 1 
-    high = x 
-    feedback = ''
-    while feedback != 'c':
-        if low != high:
-            guess = random.randint(low,high)
-        else:
-            guess = low 
-        feedback = input(f'Est-ce que {guess} est supérieur (H),\
-inférieur (B) ou égal(C) à ton chiffre?')
-        if feedback == 'h':
-            high = guess - 1
-        elif feedback == 'b':
-            low = guess + 1
+# def ordinateur_guess(x):
+#     low = 1 
+#     high = x 
+#     feedback = ''
+#     count = 0
+#     while feedback != 'c':
+#         if low != high:
+#             guess = random.randint(low,high)
+#         else:
+#             guess = low 
+#         feedback = input(f'Est-ce que {guess} est supérieur (H),\
+# inférieur (B) ou égal(C) à ton chiffre?')
+#         count += 1 
+#         if feedback == 'h':
+#             high = guess - 1
+#         elif feedback == 'b':
+#             low = guess + 1
             
-    print('Bravo ordinateur, tu as trouvé')
+#     print(f'Bravo ordinateur, tu as trouvé en {count} coups')
             
     
-ordinateur_guess(100)
+# ordinateur_guess(100)
+
+
            
             
         
