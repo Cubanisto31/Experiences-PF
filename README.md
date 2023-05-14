@@ -24,4 +24,8 @@ Description des fichiers :
 
 **6° TicTacToe version ChatGPT** -> Est un programme généré par ChatGPT qui permet de jouer au morpion. 
 
+**7° programme projet datagouv Lucas** -> Est un code R qui créer une liste de sous bases en fonction de l'organisation qui ont publiées des db sur datagouv
+
+*A terminer*
+
 
