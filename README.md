@@ -24,8 +24,9 @@ Description des fichiers :
 
 **6° TicTacToe version ChatGPT** -> Est un programme généré par ChatGPT qui permet de jouer au morpion. 
 
-**7° programme projet datagouv Lucas** -> Est un code R qui créé une liste de sous bases en fonction de l'organisation qui a publié des db sur datagouv
+**7° programme projet datagouv Lucas** -> Est un code R qui créé une liste de sous bases en fonction de l'organisation qui a publié des db sur datagouv.
 
+**8° Code sortie de poule echecs vBlaise** -> Est un code R qui permet de simuler le résultat d'une ronde suisse (règle tournoi échecs Arcep modulo l'existence des matchs nuls et la possibilité de rencontrer le même adversaire) avec n joueurs et t tours définis par l'utilisateur. 
 *A terminer*
 
 
