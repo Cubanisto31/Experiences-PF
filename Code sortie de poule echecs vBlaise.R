@@ -6,11 +6,11 @@
 n <- 128
 
 # Pour la reproductibilité des résultats
-set.seed(123)  
+set.seed(2)  
 
 vecteur <- rep(0,n)  
 
-t <- 8
+t <- 7
 
 #Répéter l'opération afin de simuler t tours 
 for (i in 1:t) {indices <- sample(seq_along(vecteur), length(vecteur) %/% 2)  # Indices aléatoires pour ajouter 1
