@@ -29,6 +29,9 @@ Description des fichiers :
 **8° Code sortie de poule echecs vBlaise** -> Est un code R qui permet de simuler le résultat d'une ronde suisse (règle tournoi échecs Arcep modulo l'existence des matchs nuls et la possibilité de rencontrer le même adversaire) avec n joueurs et t tours définis par l'utilisateur. 
 *A terminer*
 
-**9° Notice **
+**9° Notice Excel pronostiqueur vF.docx** -> Consignes de fonctionnement du système de pronostics des résultats du tournoi de babyfoot de l'Arcep 2024 à l'intention des participants. 
 
+**10° Excel pronostiqueur** -> Excel qui contient la formule de calcul des côtes des équipes sur la base des scores des équipes lors de la phase poule.
+
+**11° Compilateur des resultats des pronostiqueurs.py** -> Programme qui permet de compiler les résultats transmis par les parieurs afin de calculer le nombre de points marqué par chaque parieur.
 
