@@ -29,4 +29,6 @@ Description des fichiers :
 **8° Code sortie de poule echecs vBlaise** -> Est un code R qui permet de simuler le résultat d'une ronde suisse (règle tournoi échecs Arcep modulo l'existence des matchs nuls et la possibilité de rencontrer le même adversaire) avec n joueurs et t tours définis par l'utilisateur. 
 *A terminer*
 
+**9° Notice **
+
 
