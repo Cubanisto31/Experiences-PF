@@ -35,3 +35,5 @@ Description des fichiers :
 
 **11° Compilateur des resultats des pronostiqueurs.py** -> Programme qui permet de compiler les résultats transmis par les parieurs afin de calculer le nombre de points marqué par chaque parieur.
 
+**12° Comptage jeu du rire.xlsm** -> Excel qui permet de comptabiliser les scores lors du jeu du rire. Premier usage de boutons dans excel. 
+
