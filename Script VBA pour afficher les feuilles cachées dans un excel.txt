@@ -1,0 +1,9 @@
+Sub AfficherToutesLesFeuilles()
+    Dim ws As Worksheet
+    ' Boucle à travers toutes les feuilles du classeur
+    For Each ws In ThisWorkbook.Sheets
+        ' Rendre la feuille visible
+        ws.Visible = xlSheetVisible
+    Next ws
+    MsgBox "Toutes les feuilles sont maintenant visibles."
+End Sub
