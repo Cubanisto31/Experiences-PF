@@ -37,3 +37,6 @@ Description des fichiers :
 
 **12° Comptage jeu du rire.xlsm** -> Excel qui permet de comptabiliser les scores lors du jeu du rire. Premier usage de boutons dans excel. 
 
+**13° Recherche doc.ipynb** -> Est un code python qui permet de rehercher tous les fichiers contenant une chaîne de caractères spécifiée dans les fichiers de l'ordinateur
+
+
