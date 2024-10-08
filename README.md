@@ -37,6 +37,8 @@ Description des fichiers :
 
 **12° Comptage jeu du rire.xlsm** -> Excel qui permet de comptabiliser les scores lors du jeu du rire. Premier usage de boutons dans excel. 
 
-**13° Recherche doc.ipynb** -> Est un code python qui permet de rehercher tous les fichiers contenant une chaîne de caractères spécifiée dans les fichiers de l'ordinateur
+**13° Recherche doc.ipynb** -> Est un code python qui permet de rehercher tous les fichiers contenant une chaîne de caractères spécifiée dans les fichiers de l'ordinateur.
 
+**14° Script VBA pour afficher les feuilles cachées dans un excel.txt** -> Est un script VBA qui permet, lorsqu'il est lancé dans un excel, d'afficher toutes les feuilles cachées.
 
+**15° Fiche raccourcis.docx** -> Est une fiche qui recence des raccourcis utiles sur différents logiciels. Cette fiche a vocation a être alimentée régulièrement.
